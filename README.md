@@ -44,7 +44,7 @@ NEXI-AI/
 ## 👥 Team Management
 
 - Project Owner: **Trust Nexus**
-- Team Leads: **Abdul Basit**, **Zaina**
+- Team Leads: **Abdul Basit Khan**, **Zaina Liaquat**
 - Contributors: All team members (added via personal GitHub accounts)
 
 If a team member leaves, the next assigned member will continue from where the work was left off.
