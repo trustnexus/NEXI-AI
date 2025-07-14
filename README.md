@@ -1,34 +1,35 @@
 
 # NEXI-AI 🤖
 
-A modular AI system powering the **NEXI Humanoid Robot** — integrating components from **Computer Vision**, **NLP**, **Speech**, **Inference**, and more.
+A modular AI system powering the **NEXI Humanoid Robot** — integrating components from **Computer Vision**, **Speech**, **NLP**, **Learning**, and more.
 
 ---
 
-## 🔧 Project Structure
+## 🔧 Project Structure (Feature-Based)
 
 ```
 NEXI-AI/
-├── computer_vision/       # Face detection, object tracking, etc.
-├── nlp/                   # Intent recognition, keyword extraction, etc.
-├── speech/                # Wake-word detection, speech-to-text, TTS
-├── inference_engine/      # Decision logic and response generation
-├── hardware_interface/    # Sensor drivers, GPIO interfaces
-├── ui_frontend/           # Web/mobile interface (if any)
-├── docs/                  # Diagrams, notes, architecture plans
-├── requirements.txt       # Shared dependencies
-└── README.md              # This file
+├── face_analysis/            # Face detection, age/gender prediction, emotion recognition
+├── voice_input/              # Wake-word detection, speaker recognition, speech-to-text
+├── language_understanding/   # NLP, query analysis, user context profiling
+├── response_generation/      # Smart replies, Urdu/English response logic
+├── learning_module/          # "Teach me" logic, memory storage
+├── docs/                     # Diagrams, architecture, task plans
+├── requirements.txt          # Shared Python dependencies
+└── README.md                 # This file
 ```
 
 ---
 
 ## 📋 Contribution Workflow
 
-1. Each member works within their assigned module folder.
-2. Create a feature branch (e.g., `cv-face-azain`, `nlp-intent-zara`).
-3. Push your code and open a **Pull Request** for review.
-4. All code must be aligned with the assigned task checklist.
-5. You may also implement someone else's task separately — the **Team Lead** will review and choose the best version.
+1. Each member works inside the **relevant feature folder**.
+2. Tasks are submitted inside weekly folders using this format:  
+   `weekXX/yourname_taskname`  
+   Example: `week01/taha_wakeword`, `week02/zara_mood-detection`
+3. Use **feature branches** (e.g., `voice-week01-basit`) to push your work.
+4. Create a **Pull Request** for review before merging.
+5. You may also complete someone else’s task separately — the **Team Lead** will decide which version to accept based on quality.
 
 ---
 
@@ -36,41 +37,42 @@ NEXI-AI/
 
 - Tasks are assigned **every Monday**.
 - All submissions are due by **Sunday**.
-- Weekly **online meetings** are held to evaluate progress.
-- Contributors may request their next week’s task early if they finish before deadline.
+- Weekly **online meetings** will be held to review progress.
+- You can request your next week’s task early if you finish early.
+- Contributors going beyond task requirements are appreciated, but must still align with the task checklist.
+- If any member leaves or is removed, the replacement will continue from where they left off.
 
 ---
 
 ## 👥 Team Management
 
-- Project Owner: **Trust Nexus**
-- Team Leads: **Abdul Basit Khan**, **Zaina Liaquat**
-- Contributors: All team members (added via personal GitHub accounts)
-
-If a team member leaves, the next assigned member will continue from where the work was left off.
+- **Project Owner**: Trust Nexus
+- **Team Leads**: Abdul Basit Khan, Zaina Liaquat
+- **Contributors**: All group members (added via personal GitHub accounts)
 
 ---
 
 ## 📞 Communication
 
-All queries, updates, or task changes must be communicated in the official **WhatsApp group**.
+All queries, progress updates, and task requests must be shared in the official **WhatsApp group**.
 
 ---
 
 ## ✅ Getting Started
 
-1. Clone the repo:
+1. Clone the repository:
    ```bash
    git clone https://github.com/trust-nexus/NEXI-AI.git
    ```
-2. Install dependencies:
+2. Install shared dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Navigate to your assigned module and start working.
+3. Navigate to your assigned module and begin working inside the appropriate weekly folder.
 
 ---
 
 ## 📄 License
 
-This project is private and not open source. Internal use only under the Trust Nexus team.
+This is a **private internal project** of the Trust Nexus team.  
+Not open-source or for public distribution.
