@@ -3,9 +3,9 @@ services:
     image: postgres:15
     restart: always
     environment:
-      POSTGRES_USER: nexidbuser
-      POSTGRES_PASSWORD: nexipassword
-      POSTGRES_DB: nexidb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: NEXI_db
     ports:
       - "5432:5432"
     volumes:
@@ -17,6 +17,8 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:1234@db/NEXI_db
 
 volumes:
-  postgres_data: 
+  postgres_data:
