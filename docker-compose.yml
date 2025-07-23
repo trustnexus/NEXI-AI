@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: nexidbuser
+      POSTGRES_PASSWORD: nexipassword
+      POSTGRES_DB: nexidb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data: 
